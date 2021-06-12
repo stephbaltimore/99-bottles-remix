@@ -1,0 +1,49 @@
+h1 {
+  text-align: center;
+}
+.outershell {
+  padding: 50px 50px 75px 100px;
+}
+
+.input-div {
+  padding: 20px 20px 5px 20px;
+  background-color: gainsboro;
+  border-radius: 25px;
+}
+
+.input-box {
+  max-width: 325px;
+}
+
+.list-area {
+  margin-top: 20px;
+}
+
+
+li:before {
+  content: '\1F3BC';
+  }
+
+
+.line-1{
+    top: 50%;
+    margin: 0 auto;
+    border-right: 1px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/* Animation */
+li#typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) 10 normal;
+}
+
+@keyframes typewriter{
+  from{width: 0%;}
+  to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: darkgray;}
+  to{border-right-color: white;}
+}
